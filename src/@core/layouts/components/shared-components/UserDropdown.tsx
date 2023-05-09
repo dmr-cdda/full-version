@@ -26,6 +26,7 @@ import { useAuth } from 'src/hooks/useAuth'
 import { Settings } from 'src/@core/context/settingsContext'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
+import { RootState } from 'src/store'
 
 interface Props {
   settings: Settings
@@ -48,10 +49,10 @@ const MenuItemStyled = styled(MenuItem)<MenuItemProps>(({ theme }) => ({
 
 const UserDropdown = (props: Props) => {
   // ** Props
-  const { settings } = props;
+  const { settings } = props
 
-  const dispatch = useDispatch();
-  const { drawer } = useSelector(state => state.customizer);
+  const dispatch = useDispatch()
+  const { drawer } = useSelector((state: RootState) => state.customizer)
 
   // ** States
   const [anchorEl, setAnchorEl] = useState<Element | null>(null)
@@ -72,12 +73,12 @@ const UserDropdown = (props: Props) => {
       router.push(url)
     }
     setAnchorEl(null)
-  };
+  }
 
   const handleDrawer = () => {
-    setAnchorEl(null);
-    dispatch(setDrawer(true));
-  };
+    setAnchorEl(null)
+    dispatch(setDrawer(true))
+  }
 
   const styles = {
     px: 4,
@@ -166,7 +167,7 @@ const UserDropdown = (props: Props) => {
         <Divider sx={{ my: theme => `${theme.spacing(2)} !important` }} />
         <MenuItemStyled sx={{ p: 0 }} onClick={handleDrawer}>
           <Box sx={styles}>
-            <InlineIcon color="blue" icon='tabler:settings' />
+            <InlineIcon color='blue' icon='tabler:settings' />
             Customizer
           </Box>
         </MenuItemStyled>

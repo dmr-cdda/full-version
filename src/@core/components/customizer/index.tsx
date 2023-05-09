@@ -28,6 +28,7 @@ import { useSelector } from 'react-redux'
 
 import { setDrawer } from 'src/store/apps/customizer'
 import { useDispatch } from 'react-redux'
+import { RootState } from 'src/store'
 
 const Toggler = styled(Box)<BoxProps>(({ theme }) => ({
   right: 0,
@@ -79,11 +80,8 @@ const Customizer = () => {
   const [open, setOpen] = useState<boolean>(false)
 
   // customizer drawer state
-  const dispatch = useDispatch();
-  const { drawer } = useSelector(state => state.customizer);
-
-  console.log(drawer);
-  
+  const dispatch = useDispatch()
+  const { drawer } = useSelector((state: RootState) => state.customizer)
 
   // ** Hook
   const { settings, saveSettings } = useSettings()
