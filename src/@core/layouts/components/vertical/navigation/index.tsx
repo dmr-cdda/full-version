@@ -137,7 +137,7 @@ const Navigation = (props: Props) => {
         shadowRef.current.classList.remove('scrolled')
       }
     }
-  }
+  }; 
 
   const ScrollWrapper = hidden ? Box : PerfectScrollbar
 

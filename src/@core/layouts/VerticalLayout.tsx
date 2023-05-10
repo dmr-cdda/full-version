@@ -99,7 +99,7 @@ const VerticalLayout = (props: LayoutProps) => {
           />
 
           {/* Content */}
-          {/* <ContentWrapper
+          <ContentWrapper
             className='layout-page-content'
             sx={{
               ...(contentHeightFixed && {
@@ -114,7 +114,7 @@ const VerticalLayout = (props: LayoutProps) => {
             }}
           >
             {children}
-          </ContentWrapper> */}
+          </ContentWrapper>
 
           {/* Footer Component */}
           {/* <Footer footerStyles={footerProps?.sx} footerContent={footerProps?.content} {...props} /> */}

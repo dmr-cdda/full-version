@@ -168,7 +168,7 @@ const UserDropdown = (props: Props) => {
         <MenuItemStyled sx={{ p: 0 }} onClick={handleDrawer}>
           <Box sx={styles}>
             <InlineIcon color='blue' icon='tabler:settings' />
-            Customizer
+            Theme Customization
           </Box>
         </MenuItemStyled>
         <MenuItemStyled sx={{ p: 0 }} onClick={() => handleDropdownClose('/pages/help-center')}>

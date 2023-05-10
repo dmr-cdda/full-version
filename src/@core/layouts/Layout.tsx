@@ -7,6 +7,7 @@ import { LayoutProps } from 'src/@core/layouts/types'
 // ** Layout Components
 import VerticalLayout from './VerticalLayout'
 import HorizontalLayout from './HorizontalLayout'
+import BlankLayout from './BlankLayout'
 
 const Layout = (props: LayoutProps) => {
   // ** Props
@@ -36,10 +37,12 @@ const Layout = (props: LayoutProps) => {
   }, [hidden])
 
   if (settings.layout === 'horizontal') {
-    return <HorizontalLayout {...props}>{children}</HorizontalLayout>
+    return <BlankLayout {...props}>{children}</BlankLayout>
+    // return <HorizontalLayout {...props}>{children}</HorizontalLayout>
   }
 
-  return <VerticalLayout {...props}>{children}</VerticalLayout>
+  // return <VerticalLayout {...props}>{children}</VerticalLayout>
+  return <BlankLayout {...props}>{children}</BlankLayout>
 }
 
 export default Layout
