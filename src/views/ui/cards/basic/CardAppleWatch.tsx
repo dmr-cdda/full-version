@@ -4,6 +4,7 @@ import Button from '@mui/material/Button'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
+import { Grid, Stack } from '@mui/material'
 
 const CardAppleWatch = () => {
   return (
@@ -18,9 +19,25 @@ const CardAppleWatch = () => {
           3.1GHz 6-core 10th-generation Intel Core i5 processor, Turbo Boost up to 4.5GHz
         </Typography>
       </CardContent>
-      <Button variant='contained' sx={{ py: 2.5, width: '100%', borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
-        Add To Cart
-      </Button>
+      <Grid container spacing={2}>
+        <Grid item xs={12} md={6}>
+          <Button
+            variant='contained'
+            sx={{ py: 2.5, borderBottomLeftRadius: 0, borderBottomRightRadius: 0, width: '100%' }}
+          >
+            Add To Cart
+          </Button>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Button
+            variant='contained'
+            color='error'
+            sx={{ py: 2.5, borderTopLeftRadius: 0, borderTopRightRadius: 0, width: '100%' }}
+          >
+            Purchase
+          </Button>
+        </Grid>
+      </Grid>
     </Card>
   )
 }

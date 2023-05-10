@@ -37,12 +37,12 @@ const Layout = (props: LayoutProps) => {
   }, [hidden])
 
   if (settings.layout === 'horizontal') {
-    return <BlankLayout {...props}>{children}</BlankLayout>
-    // return <HorizontalLayout {...props}>{children}</HorizontalLayout>
+    // return <BlankLayout {...props}>{children}</BlankLayout>
+    return <HorizontalLayout {...props}>{children}</HorizontalLayout>
   }
 
-  // return <VerticalLayout {...props}>{children}</VerticalLayout>
-  return <BlankLayout {...props}>{children}</BlankLayout>
+  return <VerticalLayout {...props}>{children}</VerticalLayout>
+  // return <BlankLayout {...props}>{children}</BlankLayout>
 }
 
 export default Layout
