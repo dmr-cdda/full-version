@@ -28,8 +28,8 @@ export const getStaticPaths: GetStaticPaths = () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }: GetStaticPropsContext) => {
-  const res = await axios.get('/pages/pricing')
-  const data: PricingDataType = res.data
+  const res = await axios.get('/pages/pricing');
+  const data: PricingDataType = res.data;
 
   return {
     props: {

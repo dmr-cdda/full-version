@@ -20,7 +20,7 @@ let theme = createTheme({
       }
     }
   }
-})
+});
 
 const CardAppleWatch = () => {
   return (
