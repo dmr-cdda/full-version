@@ -46,6 +46,7 @@ const UserLayout = ({ children, contentHeightFixed }: Props) => {
    *  ! Do not change this value unless you know what you are doing. It can break the template.
    */
   const hidden = useMediaQuery((theme: Theme) => theme.breakpoints.down('lg'))
+  
 
   if (hidden && settings.layout === 'horizontal') {
     settings.layout = 'vertical'

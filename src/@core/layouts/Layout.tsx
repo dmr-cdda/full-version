@@ -7,7 +7,6 @@ import { LayoutProps } from 'src/@core/layouts/types'
 // ** Layout Components
 import VerticalLayout from './VerticalLayout'
 import HorizontalLayout from './HorizontalLayout'
-import BlankLayout from './BlankLayout'
 
 const Layout = (props: LayoutProps) => {
   // ** Props

@@ -11,15 +11,15 @@ const navigation = (): VerticalNavItemsType => {
       children: [
         {
           title: 'Analytics',
-          path: '/dashboards/analytics'
+          path: ''
         },
         {
           title: 'CRM',
-          path: '/dashboards/crm'
+          path: ''
         },
         {
           title: 'eCommerce',
-          path: '/dashboards/ecommerce'
+          path: ''
         }
       ]
     },
@@ -29,17 +29,17 @@ const navigation = (): VerticalNavItemsType => {
     {
       title: 'Email',
       icon: 'tabler:mail',
-      path: '/apps/email'
+      path: ''
     },
     {
       title: 'Chat',
       icon: 'tabler:messages',
-      path: '/apps/chat'
+      path: ''
     },
     {
       title: 'Calendar',
       icon: 'tabler:calendar',
-      path: '/apps/calendar'
+      path: ''
     },
     {
       title: 'Invoice',
@@ -47,19 +47,19 @@ const navigation = (): VerticalNavItemsType => {
       children: [
         {
           title: 'List',
-          path: '/apps/invoice/list'
+          path: ''
         },
         {
           title: 'Preview',
-          path: '/apps/invoice/preview'
+          path: ''
         },
         {
           title: 'Edit',
-          path: '/apps/invoice/edit'
+          path: ''
         },
         {
           title: 'Add',
-          path: '/apps/invoice/add'
+          path: ''
         }
       ]
     },
@@ -69,30 +69,30 @@ const navigation = (): VerticalNavItemsType => {
       children: [
         {
           title: 'List',
-          path: '/apps/user/list'
+          path: ''
         },
         {
           title: 'View',
           children: [
             {
               title: 'Account',
-              path: '/apps/user/view/account'
+              path: ''
             },
             {
               title: 'Security',
-              path: '/apps/user/view/security'
+              path: ''
             },
             {
               title: 'Billing & Plans',
-              path: '/apps/user/view/billing-plan'
+              path: ''
             },
             {
               title: 'Notifications',
-              path: '/apps/user/view/notification'
+              path: ''
             },
             {
               title: 'Connection',
-              path: '/apps/user/view/connection'
+              path: ''
             }
           ]
         }
@@ -104,11 +104,11 @@ const navigation = (): VerticalNavItemsType => {
       children: [
         {
           title: 'Roles',
-          path: '/apps/roles'
+          path: ''
         },
         {
           title: 'Permissions',
-          path: '/apps/permissions'
+          path: ''
         }
       ]
     },
@@ -121,19 +121,19 @@ const navigation = (): VerticalNavItemsType => {
           children: [
             {
               title: 'Profile',
-              path: '/pages/user-profile/profile'
+              path: ''
             },
             {
               title: 'Teams',
-              path: '/pages/user-profile/teams'
+              path: ''
             },
             {
               title: 'Projects',
-              path: '/pages/user-profile/projects'
+              path: ''
             },
             {
               title: 'Connections',
-              path: '/pages/user-profile/connections'
+              path: ''
             }
           ]
         },
@@ -142,38 +142,38 @@ const navigation = (): VerticalNavItemsType => {
           children: [
             {
               title: 'Account',
-              path: '/pages/account-settings/account'
+              path: ''
             },
             {
               title: 'Security',
-              path: '/pages/account-settings/security'
+              path: ''
             },
             {
               title: 'Billing',
-              path: '/pages/account-settings/billing'
+              path: ''
             },
             {
               title: 'Notifications',
-              path: '/pages/account-settings/notifications'
+              path: ''
             },
 
             {
               title: 'Connections',
-              path: '/pages/account-settings/connections'
+              path: ''
             }
           ]
         },
         {
           title: 'FAQ',
-          path: '/pages/faq'
+          path: ''
         },
         {
           title: 'Help Center',
-          path: '/pages/help-center'
+          path: ''
         },
         {
           title: 'Pricing',
-          path: '/pages/pricing'
+          path: ''
         },
         {
           title: 'Miscellaneous',
@@ -181,27 +181,27 @@ const navigation = (): VerticalNavItemsType => {
             {
               openInNewTab: true,
               title: 'Coming Soon',
-              path: '/pages/misc/coming-soon'
+              path: ''
             },
             {
               openInNewTab: true,
               title: 'Under Maintenance',
-              path: '/pages/misc/under-maintenance'
+              path: ''
             },
             {
               openInNewTab: true,
               title: 'Page Not Found - 404',
-              path: '/pages/misc/404-not-found'
+              path: ''
             },
             {
               openInNewTab: true,
               title: 'Not Authorized - 401',
-              path: '/pages/misc/401-not-authorized'
+              path: ''
             },
             {
               openInNewTab: true,
               title: 'Server Error - 500',
-              path: '/pages/misc/500-server-error'
+              path: ''
             }
           ]
         }
@@ -217,17 +217,17 @@ const navigation = (): VerticalNavItemsType => {
             {
               openInNewTab: true,
               title: 'Login v1',
-              path: '/pages/auth/login-v1'
+              path: ''
             },
             {
               openInNewTab: true,
               title: 'Login v2',
-              path: '/pages/auth/login-v2'
+              path: ''
             },
             {
               openInNewTab: true,
               title: 'Login With AppBar',
-              path: '/pages/auth/login-with-appbar'
+              path: ''
             }
           ]
         },
@@ -237,17 +237,17 @@ const navigation = (): VerticalNavItemsType => {
             {
               openInNewTab: true,
               title: 'Register v1',
-              path: '/pages/auth/register-v1'
+              path: ''
             },
             {
               openInNewTab: true,
               title: 'Register v2',
-              path: '/pages/auth/register-v2'
+              path: ''
             },
             {
               openInNewTab: true,
               title: 'Register Multi-Steps',
-              path: '/pages/auth/register-multi-steps'
+              path: ''
             }
           ]
         },
@@ -257,12 +257,12 @@ const navigation = (): VerticalNavItemsType => {
             {
               openInNewTab: true,
               title: 'Verify Email v1',
-              path: '/pages/auth/verify-email-v1'
+              path: ''
             },
             {
               openInNewTab: true,
               title: 'Verify Email v2',
-              path: '/pages/auth/verify-email-v2'
+              path: ''
             }
           ]
         },
@@ -272,12 +272,12 @@ const navigation = (): VerticalNavItemsType => {
             {
               openInNewTab: true,
               title: 'Forgot Password v1',
-              path: '/pages/auth/forgot-password-v1'
+              path: ''
             },
             {
               openInNewTab: true,
               title: 'Forgot Password v2',
-              path: '/pages/auth/forgot-password-v2'
+              path: ''
             }
           ]
         },
@@ -287,12 +287,12 @@ const navigation = (): VerticalNavItemsType => {
             {
               openInNewTab: true,
               title: 'Reset Password v1',
-              path: '/pages/auth/reset-password-v1'
+              path: ''
             },
             {
               openInNewTab: true,
               title: 'Reset Password v2',
-              path: '/pages/auth/reset-password-v2'
+              path: ''
             }
           ]
         },
@@ -302,12 +302,12 @@ const navigation = (): VerticalNavItemsType => {
             {
               openInNewTab: true,
               title: 'Two Steps v1',
-              path: '/pages/auth/two-steps-v1'
+              path: ''
             },
             {
               openInNewTab: true,
               title: 'Two Steps v2',
-              path: '/pages/auth/two-steps-v2'
+              path: ''
             }
           ]
         }
@@ -319,22 +319,22 @@ const navigation = (): VerticalNavItemsType => {
       children: [
         {
           title: 'Checkout',
-          path: '/pages/wizard-examples/checkout'
+          path: ''
         },
         {
           title: 'Property Listing',
-          path: '/pages/wizard-examples/property-listing'
+          path: ''
         },
         {
           title: 'Create Deal',
-          path: '/pages/wizard-examples/create-deal'
+          path: ''
         }
       ]
     },
     {
       icon: 'tabler:square',
       title: 'Dialog Examples',
-      path: '/pages/dialog-examples'
+      path: ''
     },
     {
       sectionTitle: 'User Interface'
@@ -342,37 +342,36 @@ const navigation = (): VerticalNavItemsType => {
     {
       title: 'Typography',
       icon: 'tabler:typography',
-      path: '/ui/typography'
+      path: ''
     },
     {
       title: 'Icons',
-      path: '/ui/icons',
+      path: '',
       icon: 'tabler:brand-tabler'
     },
     {
-      
       title: 'Cards',
       icon: 'tabler:id',
       children: [
         {
           title: 'Basic',
-          path: '/ui/cards/basic'
+          path: ''
         },
         {
           title: 'Advanced',
-          path: '/ui/cards/advanced'
+          path: ''
         },
         {
           title: 'Statistics',
-          path: '/ui/cards/statistics'
+          path: ''
         },
         {
           title: 'Widgets',
-          path: '/ui/cards/widgets'
+          path: ''
         },
         {
           title: 'Actions',
-          path: '/ui/cards/actions'
+          path: ''
         }
       ]
     },
@@ -384,84 +383,84 @@ const navigation = (): VerticalNavItemsType => {
       children: [
         {
           title: 'Accordion',
-          path: '/components/accordion'
+          path: ''
         },
         {
           title: 'Alerts',
-          path: '/components/alerts'
+          path: ''
         },
         {
           title: 'Avatars',
-          path: '/components/avatars'
+          path: ''
         },
         {
           title: 'Badges',
-          path: '/components/badges'
+          path: ''
         },
         {
           title: 'Buttons',
-          path: '/components/buttons'
+          path: ''
         },
         {
           title: 'Button Group',
-          path: '/components/button-group'
+          path: ''
         },
         {
           title: 'Chips',
-          path: '/components/chips'
+          path: ''
         },
         {
           title: 'Dialogs',
-          path: '/components/dialogs'
+          path: ''
         },
         {
           title: 'List',
-          path: '/components/list'
+          path: ''
         },
         {
           title: 'Menu',
-          path: '/components/menu'
+          path: ''
         },
         {
           title: 'Pagination',
-          path: '/components/pagination'
+          path: ''
         },
         {
           title: 'Progress',
-          path: '/components/progress'
+          path: ''
         },
         {
           title: 'Ratings',
-          path: '/components/ratings'
+          path: ''
         },
         {
           title: 'Snackbar',
-          path: '/components/snackbar'
+          path: ''
         },
         {
           title: 'Swiper',
-          path: '/components/swiper'
+          path: ''
         },
         {
           title: 'Tabs',
-          path: '/components/tabs'
+          path: ''
         },
         {
           title: 'Timeline',
-          path: '/components/timeline'
+          path: ''
         },
         {
           title: 'Toasts',
-          path: '/components/toast'
+          path: ''
         },
         {
           title: 'Tree View',
-          path: '/components/tree-view'
+          path: ''
         },
         {
           title: 'More',
-          path: '/components/more'
-        },
+          path: ''
+        }
       ]
     },
     {
@@ -473,82 +472,82 @@ const navigation = (): VerticalNavItemsType => {
       children: [
         {
           title: 'Text Field',
-          path: '/forms/form-elements/text-field'
+          path: ''
         },
         {
           title: 'Select',
-          path: '/forms/form-elements/select'
+          path: ''
         },
         {
           title: 'Checkbox',
-          path: '/forms/form-elements/checkbox'
+          path: ''
         },
         {
           title: 'Radio',
-          path: '/forms/form-elements/radio'
+          path: ''
         },
         {
           title: 'Custom Inputs',
-          path: '/forms/form-elements/custom-inputs'
+          path: ''
         },
         {
           title: 'Textarea',
-          path: '/forms/form-elements/textarea'
+          path: ''
         },
         {
           title: 'Autocomplete',
-          path: '/forms/form-elements/autocomplete'
+          path: ''
         },
         {
           title: 'Date Pickers',
-          path: '/forms/form-elements/pickers'
+          path: ''
         },
         {
           title: 'Switch',
-          path: '/forms/form-elements/switch'
+          path: ''
         },
         {
           title: 'File Uploader',
-          path: '/forms/form-elements/file-uploader'
+          path: ''
         },
         {
           title: 'Editor',
-          path: '/forms/form-elements/editor'
+          path: ''
         },
         {
           title: 'Slider',
-          path: '/forms/form-elements/slider'
+          path: ''
         },
         {
           title: 'Input Mask',
-          path: '/forms/form-elements/input-mask'
-        },
+          path: ''
+        }
       ]
     },
     {
       icon: 'tabler:layout-navbar',
       title: 'Form Layouts',
-      path: '/forms/form-layouts'
+      path: ''
     },
     {
       title: 'Form Validation',
-      path: '/forms/form-validation',
+      path: '',
       icon: 'tabler:checkbox'
     },
     {
       title: 'Form Wizard',
-      path: '/forms/form-wizard',
+      path: '',
       icon: 'tabler:text-wrap-disabled'
     },
     {
       title: 'Table',
       icon: 'tabler:table',
-      path: '/tables/mui'
+      path: ''
     },
     {
       title: 'Mui DataGrid',
       icon: 'tabler:layout-grid',
-      path: '/tables/data-grid'
+      path: ''
     },
     {
       sectionTitle: 'Charts & Misc'
@@ -559,15 +558,15 @@ const navigation = (): VerticalNavItemsType => {
       children: [
         {
           title: 'Apex',
-          path: '/charts/apex-charts'
+          path: ''
         },
         {
           title: 'Recharts',
-          path: '/charts/recharts'
+          path: ''
         },
         {
           title: 'ChartJS',
-          path: '/charts/chartjs'
+          path: ''
         }
       ]
     },
@@ -609,13 +608,13 @@ const navigation = (): VerticalNavItemsType => {
           title: 'Raise Support',
           externalLink: true,
           openInNewTab: true,
-          path: 'https://pixinvent.ticksy.com/'
+          path: ''
         },
         {
           title: 'Documentation',
           externalLink: true,
           openInNewTab: true,
-          path: 'https://demos.pixinvent.com/vuexy-nextjs-admin-template/documentation'
+          path: ''
         }
       ]
     }

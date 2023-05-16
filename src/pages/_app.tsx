@@ -58,6 +58,7 @@ import 'src/iconify-bundle/icons-bundle-react'
 
 // ** Global css styles
 import '../../styles/globals.css'
+import AclGuard from 'src/@core/components/auth/AclGuard'
 
 // ** Extend App Props with Emotion
 type ExtendedAppProps = AppProps & {
@@ -97,6 +98,10 @@ const App = (props: ExtendedAppProps) => {
 
   const setConfig = Component.setConfig ?? undefined
 
+  const aclAbilities = Component.acl ?? defaultACLObj
+
+  console.log(aclAbilities)
+
   return (
     <Provider store={store}>
       <CacheProvider value={emotionCache}>
@@ -106,13 +111,13 @@ const App = (props: ExtendedAppProps) => {
           <meta name='keywords' content='Material Design, MUI, Admin Template, React Admin Template' />
           <meta name='viewport' content='initial-scale=1, width=device-width' />
         </Head>
-        
+
         <SettingsProvider {...(setConfig ? { pageSettings: setConfig() } : {})}>
           <SettingsConsumer>
             {({ settings }) => {
               return (
                 <ThemeComponent settings={settings}>
-                  {getLayout(<Component {...pageProps} />)}
+                  <AclGuard aclAbilities={aclAbilities}>{getLayout(<Component {...pageProps} />)}</AclGuard>
                   <ReactHotToast>
                     <Toaster position={settings.toastPosition} toastOptions={{ className: 'react-hot-toast' }} />
                   </ReactHotToast>
