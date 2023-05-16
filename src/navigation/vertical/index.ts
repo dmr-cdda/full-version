@@ -571,7 +571,7 @@ const navigation = (): VerticalNavItemsType => {
       ]
     },
     {
-      path: '/acl',
+      path: '',
       action: 'read',
       subject: 'acl-page',
       icon: 'tabler:shield',

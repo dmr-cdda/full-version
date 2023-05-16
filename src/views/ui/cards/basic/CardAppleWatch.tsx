@@ -8,7 +8,7 @@ import { ButtonGroup, ThemeProvider } from '@mui/material'
 
 import { createTheme } from '@mui/material/styles'
 
-let theme = createTheme({
+const theme = createTheme({
   components: {
     MuiToggleButtonGroup: {
       styleOverrides: {
@@ -20,7 +20,7 @@ let theme = createTheme({
       }
     }
   }
-});
+})
 
 const CardAppleWatch = () => {
   return (

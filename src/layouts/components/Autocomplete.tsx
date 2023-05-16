@@ -66,22 +66,22 @@ const defaultSuggestionsData: DefaultSuggestionsType[] = [
       {
         icon: 'tabler:chart-pie-2',
         suggestion: 'Analytics',
-        link: '/dashboards/analytics'
+        link: ''
       },
       {
         icon: 'tabler:device-analytics',
         suggestion: 'CRM',
-        link: '/dashboards/crm'
+        link: ''
       },
       {
         icon: 'tabler:shopping-cart',
         suggestion: 'eCommerce',
-        link: '/dashboards/ecommerce'
+        link: ''
       },
       {
         icon: 'tabler:users',
         suggestion: 'User List',
-        link: '/apps/user/list'
+        link: ''
       }
     ]
   },
@@ -91,22 +91,22 @@ const defaultSuggestionsData: DefaultSuggestionsType[] = [
       {
         icon: 'tabler:calendar',
         suggestion: 'Calendar',
-        link: '/apps/calendar'
+        link: ''
       },
       {
         icon: 'tabler:list-numbers',
         suggestion: 'Invoice List',
-        link: '/apps/invoice/list'
+        link: ''
       },
       {
         icon: 'tabler:currency-dollar',
         suggestion: 'Pricing',
-        link: '/pages/pricing'
+        link: ''
       },
       {
         icon: 'tabler:settings',
         suggestion: 'Account Settings',
-        link: '/pages/account-settings/account'
+        link: ''
       }
     ]
   },
@@ -116,22 +116,22 @@ const defaultSuggestionsData: DefaultSuggestionsType[] = [
       {
         icon: 'tabler:typography',
         suggestion: 'Typography',
-        link: '/ui/typography'
+        link: ''
       },
       {
         icon: 'tabler:browser',
         suggestion: 'Tabs',
-        link: '/components/tabs'
+        link: ''
       },
       {
         icon: 'tabler:hand-click',
         suggestion: 'Buttons',
-        link: '/components/buttons'
+        link: ''
       },
       {
         icon: 'tabler:id',
         suggestion: 'Advanced Cards',
-        link: '/ui/cards/advanced'
+        link: ''
       }
     ]
   },
@@ -141,22 +141,22 @@ const defaultSuggestionsData: DefaultSuggestionsType[] = [
       {
         icon: 'tabler:list-check',
         suggestion: 'Select',
-        link: '/forms/form-elements/select'
+        link: ''
       },
       {
         icon: 'tabler:space',
         suggestion: 'Autocomplete',
-        link: '/forms/form-elements/autocomplete'
+        link: ''
       },
       {
         icon: 'tabler:layout-grid',
         suggestion: 'Table',
-        link: '/tables/mui'
+        link: ''
       },
       {
         icon: 'tabler:calendar-event',
         suggestion: 'Date Pickers',
-        link: '/forms/form-elements/pickers'
+        link: ''
       }
     ]
   }

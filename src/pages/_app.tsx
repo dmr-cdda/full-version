@@ -34,7 +34,7 @@ import UserLayout from 'src/layouts/UserLayout'
 import ThemeComponent from 'src/@core/theme/ThemeComponent'
 
 // ** Spinner Import
-import Spinner from 'src/@core/components/spinner'
+// import Spinner from 'src/@core/components/spinner'
 
 // ** Contexts
 import { SettingsConsumer, SettingsProvider } from 'src/@core/context/settingsContext'
@@ -66,12 +66,6 @@ type ExtendedAppProps = AppProps & {
   emotionCache: EmotionCache
 }
 
-type GuardProps = {
-  authGuard: boolean
-  guestGuard: boolean
-  children: ReactNode
-}
-
 const clientSideEmotionCache = createEmotionCache()
 
 // ** Pace Loader
@@ -99,8 +93,6 @@ const App = (props: ExtendedAppProps) => {
   const setConfig = Component.setConfig ?? undefined
 
   const aclAbilities = Component.acl ?? defaultACLObj
-
-  console.log(aclAbilities)
 
   return (
     <Provider store={store}>
