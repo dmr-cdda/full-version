@@ -14,9 +14,6 @@ import NotificationDropdown, {
 } from 'src/@core/layouts/components/shared-components/NotificationDropdown'
 import ShortcutsDropdown, { ShortcutsType } from 'src/@core/layouts/components/shared-components/ShortcutsDropdown'
 
-// ** Hook Import
-import { useAuth } from 'src/hooks/useAuth'
-
 interface Props {
   hidden: boolean
   settings: Settings

@@ -19,9 +19,6 @@ import { setDrawer } from 'src/store/apps/customizer'
 import Icon from 'src/@core/components/icon'
 import { InlineIcon } from '@iconify/react'
 
-// ** Context
-import { useAuth } from 'src/hooks/useAuth'
-
 // ** Type Imports
 import { Settings } from 'src/@core/context/settingsContext'
 import { useSelector } from 'react-redux'
@@ -59,7 +56,6 @@ const UserDropdown = (props: Props) => {
 
   // ** Hooks
   const router = useRouter()
-  const { logout } = useAuth()
 
   // ** Vars
   const { direction } = settings
@@ -96,7 +92,6 @@ const UserDropdown = (props: Props) => {
   }
 
   const handleLogout = () => {
-    logout()
     handleDropdownClose()
   }
 
